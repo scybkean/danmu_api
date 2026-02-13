@@ -4,8 +4,8 @@ permissions:
     contents: write
 
 on:
-    schedule:
-        - cron: "0 0 * * *"  # 每天午夜执行
+  schedule:
+    - cron: '0 21 * * *'  # 每天北京时间凌晨5点执行（UTC 21:00）
     workflow_dispatch:  # 允许手动触发
 
 jobs:
